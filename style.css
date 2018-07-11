@@ -1,0 +1,464 @@
+body {
+	font-family: "Arial", Serif;
+	background-color: #666;;
+	overflow-x: hidden; 
+	margin: 0;
+	padding: 0;
+}
+
+.navbars {
+	overflow: hidden;
+	height: 63px;
+	background-color: #3b5998;
+}
+
+.navbars a {
+	float: left;
+	text-decoration: none;
+	display: block;
+	color:#f2f2f2;
+	font-size: 16px;
+	text-align: center;
+	padding: 14px 16px;
+}
+
+.navbars ul{
+	margin: 8px 0 0 0;
+	list-style-type: none;
+}
+
+.navbars a:hover{
+     color: #000;
+     background-color: #ddd;
+}
+
+.side-navs {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	transition: 0.5s;
+	background-color: #111;
+	padding-top: 60px;
+	overflow-x: hidden;
+	opacity: 0.9;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.side-navs a {
+	display: block;
+	text-decoration: none;
+	font-size: 22px;
+	color: #ccc;
+	transition: 0.3s;
+	padding: 10px 10px 10px 30px;
+
+}
+
+.side-navs a:hover {
+	color: #fff;
+}
+
+.side-nav .btn-close {
+	position: absolute;
+	top: 0;
+	right: 22px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+.logo {
+  float: right;
+  margin-left: 886px;
+  margin-top: -2px;
+     }
+
+ .logo h1 {
+ 	font-size:  30px;
+ 	margin-top: -2px;
+ }
+
+#main {
+	padding: 20px;
+	overflow:hidden;
+	width: 100%;
+	margin:100px 0;
+	transition: margin-left 0.5s;
+	line-height: 1.5;
+	font-weight: 100;
+	
+}
+.column3 {
+	width: 33.3333%;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+.column4 {
+	width: 25%;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	max-width: 1200px;
+	width: 95%;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+}
+.typewriter{
+	padding-top: 10%;
+}
+
+.typewriter h1 {
+  color: #000;
+  font-weight: 400;
+  font-size: 3em;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+
+}
+.typewriter h2 {
+  color: #000;
+  font-family: monospace;
+  text-align: center;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.scroll-down-wrapper{
+	position: absolute;
+	bottom: 5em;
+	left: 1em;
+	right: 0;
+}
+.scroll-down-icon{
+	padding-top: 60px;
+	margin: 0 auto 40px;
+	display: block;
+	width: 70px;
+}
+
+.fas{
+	opacity: .85;
+}
+.fas-4x{
+	font-size: 4em;
+}
+
+.fas {
+	display: inline-block;
+	text-rendering: auto;
+}
+
+/*.scroll-down-wrapper a:hover{
+	 color: #000;
+     background-color: #ddd;
+
+}*/
+/*
+Projects Section*/
+
+#portfolio {
+  height: 40px;
+  width: 100%;
+}
+
+.main-section {
+  clear: both;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 100;
+  font-size: 16px;
+  border-top: 6px solid #3b5998;
+  background-color: #ffffff;
+  /*height: 450px;*/
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.main-section a {
+  text-decoration: none;
+  color: #191919;
+}
+
+.main-section h1 {
+  font-size: 20px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  line-height: 1;
+}
+
+.main-section img {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+ }
+
+
+.browser-img {
+
+}
+
+
+.device {
+  padding: 2% 2% 2% 0;
+}
+
+.project-details .project-btn {
+  font-size: 14px;
+  margin: 40px auto 0 auto;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+}
+
+.project-details .project-btn a {
+  padding: 10px 20px;
+  border: 2px solid #FFC815;
+  color: #191919;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.project-details .project-btn a:hover {
+  text-decoration: none;
+  border: 2px solid #FFC815;
+  background-color: #FFC815;
+  color: #191919;
+}
+
+.project-details, .browser-img {
+  float: left;
+  text-align: left;
+  /*padding: 1%;*/
+}
+
+.project-details span {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.project-details {
+/*  width: 35%;*/
+
+}
+
+.project-details h1 {
+  padding: 0 0 8px 0;
+}
+
+.details-intro {
+  margin-top: 28px;
+}
+
+.web-address {
+  padding-top: 0;
+  margin-top: 0;
+  color: #f1f1f1;
+}
+
+/***********************************
+************** Footer **************
+***********************************/
+footer {
+  margin-top: 50px;
+}
+.divider {
+	margin: 0;
+	padding: 0;
+	height: 4px;
+	width: 60px;
+	background-color: #FFC815;
+}
+.row {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.icon {
+	padding: 8px;
+	max-height: 60px;
+  max-width: 60px;
+	border-radius: 100%;
+	text-align: center;
+	font-size: 1.8em;
+	background-color: #707070;
+	margin: 0 2px;
+}
+
+.icon a {
+	color: #191919;
+}
+
+.main-footer {
+  background-color: #191919;
+  color: #707070;
+  padding-bottom: 60px;
+}
+
+.main-footer h1 {
+  color: #ffffff;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 0 0 8px 0;
+  margin: 0;
+}
+
+.main-footer .arrow {
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  right: 0; 
+  font-size: 4em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.copyrights {
+  background-color: #000000;
+  color: #f1f1f1;
+  padding: 10px 0;
+}
+
+.copyrights p {
+  color: #666;
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.copyrights a {
+  color: #666;
+  /*color: rgba(255, 200, 21, 1);*/
+}
+
+.copyrights a:hover {
+  color: rgba(255, 200, 21, 1);
+/*  border-bottom: 3px solid rgba(255, 200, 21, 1);
+  padding-bottom: 6px;*/
+}
+
+.contact-info, .social-icons {
+  padding-top: 60px;
+}
+
+.social-icons a {
+  color: #191919;
+  border: 3px solid #191919;
+}
+
+.social-icons a:hover {
+  /*color: #ffffff;*/
+  border: 2px solid red;
+  background-color: #FFC815;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #707070;
+}
+
+.contact-info a:hover {
+  color: #FFC815;
+}
+
+@media all and (max-width: 650px) {
+
+  .main-section {
+    width: 100%;
+  }
+
+  .my-intro {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+    .my-intro h1 {
+      font-size: 3.8em;
+    }
+
+    .my-intro h2,
+    .my-intro h3,
+    .my-intro p {
+      font-size: 1.6em;
+      padding: 0;
+    }
+
+    /*.my-intro p {
+      margin-bottom: 20px;
+    }*/
+
+    .my-intro .wrapper {
+      margin: 90px auto 0px;
+  }
+
+    .bounce {
+      display: none;
+    }
+
+}
+
+@media all and (max-width: 330px) {
+
+
+    .my-intro h1 {
+      font-size: 3em;
+    }
+
+    .my-intro h2, 
+    .my-intro h3,
+    .my-intro p {
+      font-size: 1.25em;
+    }
+}
+
+/*Responsive */
+@media(max-width: 568px){
+	.navbar-nav{display: none}
+}
